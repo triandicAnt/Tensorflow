@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.python.pydev.pythonNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>2_fullyconnected.py</name>
+			<type>1</type>
+			<location>/home/sud/Downloads/2_fullyconnected.py</location>
+		</link>
+	</linkedResources>
 </projectDescription>
