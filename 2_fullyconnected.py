@@ -241,6 +241,8 @@ with tf.Session(graph=graph) as session:
 
 batch_size = 200
 hidden_nodes = 1024
+import math
+
 graph = tf.Graph()
 with graph.as_default():
     tf_train_dataset = tf.placeholder(tf.float32, shape = (batch_size, image_size*image_size))
@@ -248,7 +250,7 @@ with graph.as_default():
     tf_test_dataset = tf.constant(test_dataset)
     tf_valid_dataset = tf.constant(valid_dataset)
     
-    weight1 = tf.Variable(tf.truncated_normal([image_size*image_size, hidden_nodes]))
+    weight1 = tf.Variable(tf.truncated_normal([image_size * image_size, hidden_nodes], stddev= math.sqrt(2.0/ (image_size * image_size))))
     biases1 = tf.Variable(tf.zeros([hidden_nodes]))
     
     weight2 = tf.Variable(tf.truncated_normal([hidden_nodes, num_labels]))

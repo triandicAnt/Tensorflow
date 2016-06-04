@@ -20,5 +20,10 @@
 			<type>1</type>
 			<location>/home/sud/Downloads/2_fullyconnected.py</location>
 		</link>
+		<link>
+			<name>3_regularization.py</name>
+			<type>1</type>
+			<location>/home/sud/Downloads/3_regularization.py</location>
+		</link>
 	</linkedResources>
 </projectDescription>
